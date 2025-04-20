@@ -1,0 +1,366 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  
+font-family:Arial, Helvetica, sans-serif;
+}body{
+  background-color: black;
+  color: white;
+}
+nav > ul {
+ width: 100%;
+height: 70px;
+background-color: black;
+color: white;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+li >  a {
+  color: white;
+ text-decoration: none;
+
+}
+li{
+  list-style: none;
+}nav > h1{
+    padding: 10px;
+  margin-left: 35%;
+  
+  font-size : 30px;
+  }.logoimg{
+    animation: logoani 5s linear; 
+  }
+  @keyframes logoani {
+    from{transform: translateY(-100px);}
+    to{transform: translateY(2px);}
+  }
+
+.first{
+    background:#000000a1 url(./img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 300px;
+    padding-left: 44%;
+    padding-top: 13%;
+  
+    color: white;
+}a:hover{
+    color: orangered;
+   
+  }.first > a{
+    
+    text-decoration: none;
+    color: white;
+  }
+
+  .booking{
+    background: rgba(0, 0, 0, 0.847) url(./img/bg3.jpeg);
+    margin-top: 1%;
+    height: 700px;
+    width: 100%;
+    background-blend-mode: darken;
+    
+  }#rotate{
+  margin: 3%;
+  animation: rotate 15s linear infinite;
+  margin-left: 5%;
+  }
+  @keyframes rotate {
+    from{
+      transform: rotate(0deg);
+      
+    }
+    to{
+      transform: rotate(360deg);
+    
+    }
+  }#booking-btn{
+    width: 50%;
+    height: 45px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff3300;
+    border: none;
+    border-radius: 20px;
+  }.bookingplace{
+    float: right;
+  
+    width: 50%;
+    margin-top: -35%;
+    justify-content: center;
+    text-align: center;
+  }input{
+    width: 40%;
+    height: 46px;
+    border-radius: 10px;
+  background-color: transparent;
+   border-color: #ff3503;
+   font-size: 15px;
+   color: white;
+   margin: 15px;
+  }textarea{
+    width: 40%;
+    height: 86px;
+    border-radius: 10px;
+  background-color: transparent;
+   border-color: #ff3503;
+   font-size: 18px;
+   padding-left: 2%;
+   color: white;
+  }
+  /* contacct */
+  
+#contact {
+    display: flex;
+    background: rgba(0, 0, 0, 0.847) url(./img/bg1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode: darken;
+    width: 100%;
+    height: 600px;
+    padding-top: 100px;
+    justify-content: space-around;
+    font-size: 18px;
+  padding-left: 10px;
+color: white;line-height: 30px;}
+  
+  .social>ul {
+    display: flex;
+  
+  }.foot{
+    background-color:#ff3300;
+    width:30%;
+    height:200px;
+    float:right;
+   margin-top: 26%;
+   border-top-left-radius: 50px;
+   padding-top:60px;
+   padding-left:100px; 
+   font-size: 17px;
+  }a{
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 1200px) {
+    nav > h1 {
+        margin-left: 10%;
+        font-size: 25px;
+    }
+
+    .first {
+        padding-left: 20%;
+        padding-top: 10%;
+    }#rotate{
+      width: 36%;
+    }
+
+    .bookingplace {
+        width: 60%;
+      
+    }
+
+    input, textarea {
+        width: 60%;
+        height: 60px;
+    }
+    .address, .social, .opening {
+      width: 45%;
+  }
+
+  .foot {
+      width: 50%;
+      margin-left: 0;
+  }
+
+  .foot a {
+      font-size: 18px;
+  }
+  #contact {
+    flex-direction: column;
+    padding-top: 50px;
+    height: auto;
+  }
+
+  .foot {
+    width: 80%;
+    margin-top: 320px;
+    padding-left: 20px;
+    text-align: center;
+    height: 150px;
+  }
+
+  h1 {
+    width: 100%;
+    font-size: 24px;
+    padding-top: 20px;
+  }
+
+  .address, .social, .opening {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .social > ul {
+    justify-content: center;
+    margin-top: 20px;
+    
+  }
+
+  .social > ul li> {
+   
+    margin-left: -50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    nav > ul {
+        flex-direction: column;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    nav > h1 {
+        margin-left: 0;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .first {
+        padding-left: 30%;
+        padding-top: 20%;
+        height: 280px;
+    }.first >a{
+    display: none;
+    }
+
+    .booking {
+        height: 800px;
+        margin-top: 10px;
+    }
+
+    .bookingplace {
+        width: 80%;
+        margin-top: -140px;
+       
+    }
+
+    input, textarea {
+        width: 80%;
+        height: 45px;
+        margin-top: -10px;
+    }
+
+    #rotate {
+        width: 20%;
+    }
+
+    #booking-btn {
+        width: 60%;
+    }
+    #contact {
+      flex-direction: column;
+      padding-top: 20px;
+  }
+
+  .address, .social, .opening {
+      width: 90%;
+      text-align: center;
+  }
+
+  .foot {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 420px;
+      padding-left: 20px;
+      padding-top: 40px;
+    
+      height: 150px;
+  }
+
+  .foot a {
+      font-size: 18px;
+  }
+
+  .social>ul {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .social>ul li {
+      margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    nav > ul {
+        font-size: 16px;
+        align-items: center;
+    }
+
+    nav > h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .first {
+        padding-left: 15%;
+        padding-top: 20%;
+        height: 250px;
+        /* display: none; */
+
+    }.first>a{
+       display: none;
+    }
+
+    .booking {
+        height: 500px;
+    }
+
+    .bookingplace {
+        width: 90%;
+        margin-top: 0;
+    }
+
+    input, textarea {
+        width: 80%;
+        height: 30px;
+    }
+
+    #rotate {
+        width: 20%;
+    }
+
+    #booking-btn {
+        width: 80%;
+    }
+    .address, .social, .opening {
+      width: 100%;
+      text-align: center;
+  }
+
+  .foot {
+      width: 100%;
+      padding-left: 20px;
+      padding-top: 30px;
+      font-size: 14px;  
+      margin-top: 790px;
+      height: 100px;
+  }
+
+  .foot a {
+      font-size: 18px;
+      
+
+  }
+
+  .social>ul li i {
+      margin-bottom: 10px;
+  
+  }
+}
